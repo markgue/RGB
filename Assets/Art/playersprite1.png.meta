@@ -1,15 +1,10 @@
 fileFormatVersion: 2
-guid: 8a3c8884d073244bc876537f96c86e01
-timeCreated: 1518896167
+guid: fc489b9a82bbb4c17b1f00f3c444c35e
+timeCreated: 1518895775
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: blueSpikes
-    21300002: greenSpikes
-    21300004: redSpikes
-    21300006: redGround
-    21300008: greenGround
-    21300010: blueGround
+    21300000: playersprite1_0
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -93,85 +88,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: blueSpikes
+      name: playersprite1_0
       rect:
         serializedVersion: 2
-        x: 240
-        y: 2314
-        width: 448
-        height: 209
+        x: 1292
+        y: 2073
+        width: 301
+        height: 746
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: greenSpikes
-      rect:
-        serializedVersion: 2
-        x: 1203
-        y: 2314
-        width: 443
-        height: 203
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: redSpikes
-      rect:
-        serializedVersion: 2
-        x: 242
-        y: 1349
-        width: 448
-        height: 213
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: redGround
-      rect:
-        serializedVersion: 2
-        x: 1323
-        y: 1349
-        width: 207
-        height: 210
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 3}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: greenGround
-      rect:
-        serializedVersion: 2
-        x: 361
-        y: 392
-        width: 207
-        height: 206
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: blueGround
-      rect:
-        serializedVersion: 2
-        x: 1321
-        y: 390
-        width: 209
-        height: 209
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
