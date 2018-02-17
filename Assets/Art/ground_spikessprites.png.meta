@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 28f856a5640d343f8a8503bf8341aaf7
-timeCreated: 1518894946
+guid: 8a3c8884d073244bc876537f96c86e01
+timeCreated: 1518895146
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: redEnemy1
-    21300002: redEnemy2
-    21300004: greenEnemy1
-    21300006: greenEnemy2
-    21300008: blueEnemy1
-    21300010: blueEnemy2
+    21300000: blueSpikes
+    21300002: greenSpikes
+    21300004: redSpikes
+    21300006: redGround
+    21300008: greenGround
+    21300010: blueGround
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -93,85 +93,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: redEnemy1
+      name: blueSpikes
       rect:
         serializedVersion: 2
-        x: 304
-        y: 2222
-        width: 355
-        height: 267
+        x: 240
+        y: 2314
+        width: 448
+        height: 209
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: redEnemy2
+      name: greenSpikes
       rect:
         serializedVersion: 2
-        x: 1262
-        y: 2217
-        width: 360
-        height: 274
+        x: 1203
+        y: 2314
+        width: 443
+        height: 203
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: greenEnemy1
+      name: redSpikes
       rect:
         serializedVersion: 2
-        x: 286
-        y: 1260
-        width: 377
-        height: 267
+        x: 242
+        y: 1349
+        width: 448
+        height: 213
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: greenEnemy2
+      name: redGround
       rect:
         serializedVersion: 2
-        x: 1258
-        y: 1269
-        width: 358
-        height: 260
+        x: 1323
+        y: 1349
+        width: 207
+        height: 210
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: greenGround
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 392
+        width: 211
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: blueEnemy1
+      name: blueGround
       rect:
         serializedVersion: 2
-        x: 298
-        y: 296
-        width: 367
-        height: 276
+        x: 1321
+        y: 390
+        width: 209
+        height: 209
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: blueEnemy2
-      rect:
-        serializedVersion: 2
-        x: 1266
-        y: 304
-        width: 351
-        height: 267
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
