@@ -44,21 +44,35 @@ public class ColorManager : MonoBehaviour
 
     }
 
-    void SetColor(Color col, string tag)
+    public void SetColor(Color col, string tag)
     {
         cam.backgroundColor = col;
         GameObject[] prevOffColors = GameObject.FindGameObjectsWithTag(currentDisabledTag);
         GameObject[] taggedColors = GameObject.FindGameObjectsWithTag(tag);
+        GameObject[] terrainColors = GameObject.FindGameObjectsWithTag("Terrain");
+        // Old colliders
         foreach (GameObject prevOffColor in prevOffColors)
-            {
-                BoxCollider2D collider = prevOffColor.GetComponent<BoxCollider2D>();
-                collider.enabled = true;
-            }
+        {
+            BoxCollider2D collider = prevOffColor.GetComponent<BoxCollider2D>();
+            collider.enabled = true;
+            SpriteRenderer sp = prevOffColor.GetComponent<SpriteRenderer>();
+            sp.enabled = true;
+        }
+        // New colliders
         foreach (GameObject taggedColor in taggedColors)
         {
             BoxCollider2D collider = taggedColor.GetComponent<BoxCollider2D>();
             collider.enabled = false;
+            SpriteRenderer sp = taggedColor.GetComponent<SpriteRenderer>();
+            sp.enabled = false;
         }
+        // Terrain color change
+        foreach (GameObject terrain in terrainColors)
+        {
+            SpriteRenderer sp = terrain.GetComponent<SpriteRenderer>();
+            sp.color = col;
+        }
+
         currentDisabledTag = tag;
     }
 
