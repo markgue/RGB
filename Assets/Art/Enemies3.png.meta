@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 28f856a5640d343f8a8503bf8341aaf7
-timeCreated: 1518894946
+guid: eb945946360c94b28815400978eefde7
+timeCreated: 1518909838
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: redEnemy1
-    21300002: redEnemy2
-    21300004: greenEnemy1
-    21300006: greenEnemy2
-    21300008: blueEnemy1
-    21300010: blueEnemy2
+    21300000: Enemies3_0
+    21300002: Enemies3_1
+    21300004: Enemies3_2
+    21300006: Enemies3_3
+    21300008: Enemies3_4
+    21300010: Enemies3_5
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -93,13 +93,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: redEnemy1
+      name: Enemies3_0
       rect:
         serializedVersion: 2
-        x: 304
-        y: 2222
-        width: 355
-        height: 267
+        x: 268
+        y: 2218
+        width: 423
+        height: 304
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -107,13 +107,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: redEnemy2
+      name: Enemies3_1
       rect:
         serializedVersion: 2
-        x: 1262
-        y: 2217
-        width: 360
-        height: 274
+        x: 1229
+        y: 2218
+        width: 423
+        height: 304
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,13 +121,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: greenEnemy1
+      name: Enemies3_2
       rect:
         serializedVersion: 2
-        x: 286
-        y: 1260
-        width: 377
-        height: 267
+        x: 268
+        y: 1258
+        width: 423
+        height: 333
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,13 +135,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: greenEnemy2
+      name: Enemies3_3
       rect:
         serializedVersion: 2
-        x: 1258
-        y: 1269
-        width: 358
-        height: 260
+        x: 1229
+        y: 1258
+        width: 423
+        height: 333
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,13 +149,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: blueEnemy1
+      name: Enemies3_4
       rect:
         serializedVersion: 2
-        x: 298
-        y: 296
-        width: 367
-        height: 276
+        x: 268
+        y: 299
+        width: 423
+        height: 333
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,13 +163,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: blueEnemy2
+      name: Enemies3_5
       rect:
         serializedVersion: 2
-        x: 1266
-        y: 304
-        width: 351
-        height: 267
+        x: 1229
+        y: 299
+        width: 423
+        height: 333
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

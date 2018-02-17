@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: fc489b9a82bbb4c17b1f00f3c444c35e
-timeCreated: 1518905387
+guid: 41d28b1c93aed4962989cd9e4db01b8d
+timeCreated: 1518902639
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: playersprite1_0
-    21300002: playersprite1_1
-    21300004: playersprite1_2
-    21300006: playersprite1_3
-    21300008: playersprite1_4
-    21300010: playersprite1_5
+    21300000: blueSpikes
+    21300002: blueGround
+    21300004: greenSpikes
+    21300006: greenGround
+    21300008: redSpikes
+    21300010: redGround
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -93,13 +93,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: playersprite1_0
+      name: blueSpikes
       rect:
         serializedVersion: 2
-        x: 1288
-        y: 2068
-        width: 304
-        height: 754
+        x: 238
+        y: 2308
+        width: 453
+        height: 214
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -107,69 +107,69 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: playersprite1_1
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 2068
-        width: 302
-        height: 754
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: playersprite1_2
-      rect:
-        serializedVersion: 2
-        x: 358
-        y: 1109
-        width: 304
-        height: 752
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: playersprite1_3
-      rect:
-        serializedVersion: 2
-        x: 1258
-        y: 1109
-        width: 304
-        height: 752
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: playersprite1_4
-      rect:
-        serializedVersion: 2
-        x: 328
-        y: 148
-        width: 304
-        height: 754
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: playersprite1_5
+      name: blueGround
       rect:
         serializedVersion: 2
         x: 1319
-        y: 148
-        width: 302
-        height: 754
+        y: 2301
+        width: 212
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: greenSpikes
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1328
+        width: 453
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: greenGround
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 1341
+        width: 212
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redSpikes
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 389
+        width: 453
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: redGround
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 389
+        width: 212
+        height: 212
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
