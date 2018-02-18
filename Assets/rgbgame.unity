@@ -1005,6 +1005,7 @@ GameObject:
   - component: {fileID: 304537620}
   - component: {fileID: 304537621}
   - component: {fileID: 304537622}
+  - component: {fileID: 304537623}
   m_Layer: 0
   m_Name: treasure_chest
   m_TagString: Untagged
@@ -1083,6 +1084,31 @@ MonoBehaviour:
   winFireworks: {fileID: 1521528491531396, guid: 35ccd185d103643ec9445d4d0697bc81,
     type: 2}
   winThing: {fileID: 1262199524207486, guid: 009b32f77df4b4b7bac00d78c3f689bd, type: 2}
+--- !u!61 &304537623
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 304537619}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 1.28}
+  m_EdgeRadius: 0
 --- !u!1001 &312953774
 Prefab:
   m_ObjectHideFlags: 0

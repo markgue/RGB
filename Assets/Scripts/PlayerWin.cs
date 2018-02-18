@@ -15,6 +15,6 @@ public class PlayerWin : MonoBehaviour {
 	// Update is called once per frame
 	void OnTriggerEnter2D(Collider2D other){
 		Instantiate(winFireworks, gameObject.transform.position, Quaternion.identity);
-		Instantiate(winThing, new Vector3(18.0f, 1.0f, 0), Quaternion.identity);
+		Instantiate(winThing, new Vector3(60f, -50f, 0), Quaternion.identity);
 	}
 }
