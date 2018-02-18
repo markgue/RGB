@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 71f7a6882598e2047b66acaef0a8aa64
 folderAsset: yes
 timeCreated: 1518897177
+=======
+guid: 1f6e300f79f94425a8760f1b458b9023
+folderAsset: yes
+timeCreated: 1518898503
+>>>>>>> Chanel
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
