@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
 	public GameObject deathEffect; 
 
 	public Animator animator; 
+	public bool isDead = false; 
 
 	private bool isGrounded; 
 	// Use this for initialization
@@ -22,18 +23,17 @@ public class PlayerController : MonoBehaviour {
 		transform.rotation = Quaternion.Euler (0, 0, 0);
 		detectMove (); 
 		detectJump (); 
-		if (! isGrounded) {
+		if (!isGrounded) {
 			animator.SetBool ("Moving", false);
-		} else if (GetComponent<Rigidbody2D> ().velocity.x > .5) {
+		} else if (GetComponent<Rigidbody2D> ().velocity.x > 1) {
 			animator.SetBool ("Moving", true);
 			animator.SetBool ("Facing_Right", true); 
-		} else if (GetComponent<Rigidbody2D> ().velocity.x < .5) {
+		} else if (GetComponent<Rigidbody2D> ().velocity.x < -1) {
 			animator.SetBool ("Moving", true);
 			animator.SetBool ("Facing_Right", false); 
-		} else {
+		} else{
 			animator.SetBool ("Moving", false);
 		}
-
 	}
 
 	void detectMove(){
@@ -58,9 +58,7 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Enemy") {
 			RespawnPlayer ();
-		} else if (other.tag == "ExposedEnemy") {
-			Destroy (other);
-		}
+		} 
 
 	}
 	void RespawnPlayer(){
@@ -72,11 +70,13 @@ public class PlayerController : MonoBehaviour {
 		
 		GetComponent<Renderer> ().enabled = false;
 		Instantiate(deathEffect, gameObject.transform.position, Quaternion.identity);
+		isDead = true; 
 
 		yield return new WaitForSeconds(2);
 
 		gameObject.transform.position = respawnPoint.transform.position;
 		GetComponent<Renderer> ().enabled = true;
+		isDead = false; 
 	}
 
 
