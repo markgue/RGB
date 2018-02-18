@@ -4,11 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Red
-  - Green
   - Blue
-  - White
+  - Red
   - Terrain
+  - Green
+  - Ground
+  - Enemy
   layers:
   - Default
   - TransparentFX

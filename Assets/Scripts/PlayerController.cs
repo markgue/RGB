@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
 	public int moveSpeed; 
-	public int jumpSpeed; 
-	public Transform groundCheck; 
-	public LayerMask ground; 
+	public int jumpSpeed;  
+	public GameObject respawnPoint; 
+	public GameObject deathEffect; 
 
 	public Animator animator; 
 
@@ -22,12 +22,12 @@ public class PlayerController : MonoBehaviour {
 		transform.rotation = Quaternion.Euler (0, 0, 0);
 		detectMove (); 
 		detectJump (); 
-		if (GetComponent<Rigidbody2D> ().velocity.y > 0) {
+		if (! isGrounded) {
 			animator.SetBool ("Moving", false);
-		} else if (GetComponent<Rigidbody2D> ().velocity.x > 0) {
+		} else if (GetComponent<Rigidbody2D> ().velocity.x > .5) {
 			animator.SetBool ("Moving", true);
 			animator.SetBool ("Facing_Right", true); 
-		} else if (GetComponent<Rigidbody2D> ().velocity.x < 0) {
+		} else if (GetComponent<Rigidbody2D> ().velocity.x < .5) {
 			animator.SetBool ("Moving", true);
 			animator.SetBool ("Facing_Right", false); 
 		} else {
@@ -54,6 +54,30 @@ public class PlayerController : MonoBehaviour {
 		}
 
 	}
+
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.tag == "Enemy") {
+			RespawnPlayer ();
+		}
+
+	}
+	void RespawnPlayer(){
+		StartCoroutine ("RespawnPlayerCo"); 
+
+	}
+
+	public IEnumerator RespawnPlayerCo(){
+		
+		GetComponent<Renderer> ().enabled = false;
+		Instantiate(deathEffect, gameObject.transform.position, Quaternion.identity);
+
+		yield return new WaitForSeconds(1);
+
+		gameObject.transform.position = respawnPoint.transform.position;
+		GetComponent<Renderer> ().enabled = true;
+	}
+
+
 	void OnCollisionEnter2D(Collision2D collision)
 	{
 		if (collision.gameObject.tag == "Ground")
