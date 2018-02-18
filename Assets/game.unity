@@ -1266,7 +1266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5817a795160464d4c9755c678c532ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  col: {r: 1, g: 0, b: 0, a: 0}
+  col: {r: 1, g: 0, b: 0, a: 1}
   coltag: Red
   colorManager: {fileID: 1850125511}
 --- !u!1 &1352730036
