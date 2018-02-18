@@ -19,12 +19,11 @@ public class ColorSwitcher : MonoBehaviour {
 	void Update () {
     }
 
-    void OnTriggerEnter(Collider collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
             cm.SetColor(col, coltag);
-            Debug.Log("Collision!");
         }
 
     }
