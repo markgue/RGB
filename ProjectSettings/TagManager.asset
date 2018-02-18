@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - White
   - ExposedEnemy
+  - Rock
   layers:
   - Default
   - TransparentFX

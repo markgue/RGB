@@ -13,7 +13,7 @@ public class changeScene : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown ("return") || Input.GetKeyDown ("enter")) {
-			SceneManager.LoadScene ("Chanel's Scene"); //CHange to the first scene of the game
+			SceneManager.LoadScene ("rgbgame"); //CHange to the first scene of the game
 
 		}
 	}

@@ -5348,15 +5348,6 @@ Prefab:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 2037377882}
-    - target: {fileID: 1950506442150252, guid: ee56bedd4b0d74e279e6884040ac7bb1, type: 2}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 61475314217669406, guid: ee56bedd4b0d74e279e6884040ac7bb1,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee56bedd4b0d74e279e6884040ac7bb1, type: 2}
   m_IsPrefabParent: 0
