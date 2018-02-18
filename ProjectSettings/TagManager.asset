@@ -10,6 +10,8 @@ TagManager:
   - Green
   - Ground
   - Enemy
+  - White
+  - ExposedEnemy
   layers:
   - Default
   - TransparentFX

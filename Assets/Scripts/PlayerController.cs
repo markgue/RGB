@@ -58,6 +58,8 @@ public class PlayerController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Enemy") {
 			RespawnPlayer ();
+		} else if (other.tag == "ExposedEnemy") {
+			Destroy (other);
 		}
 
 	}
@@ -71,7 +73,7 @@ public class PlayerController : MonoBehaviour {
 		GetComponent<Renderer> ().enabled = false;
 		Instantiate(deathEffect, gameObject.transform.position, Quaternion.identity);
 
-		yield return new WaitForSeconds(1);
+		yield return new WaitForSeconds(2);
 
 		gameObject.transform.position = respawnPoint.transform.position;
 		GetComponent<Renderer> ().enabled = true;

@@ -7,7 +7,6 @@ public class ColorManager : MonoBehaviour
     // cheaty global variables :)))
     private string currentDisabledTag = "White";
 
-
     Camera cam;
     
     Color Red = Color.red;
@@ -28,6 +27,7 @@ public class ColorManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             SetColor(Red, "Red");
+
         }
         if (Input.GetKeyDown(KeyCode.X))
         {

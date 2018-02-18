@@ -18,9 +18,9 @@ public class EnemyMovement : MonoBehaviour {
 	void Update () {
 		transform.rotation = Quaternion.Euler (0, 0, 0);
 
-		if (transform.position.x > rightestPoint.transform.position.x-1)
+		if (transform.position.x >= rightestPoint.transform.position.x-1)
 			moveRight = false; 
-		if (transform.position.x < leftestPoint.transform.position.x+1)
+		if (transform.position.x <= leftestPoint.transform.position.x+1)
 			moveRight = true; 
 
 		if (moveRight) {
