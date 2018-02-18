@@ -9,9 +9,9 @@ public class EnemyInsideDeath1 : MonoBehaviour {
 	// Update is called once per frame
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		Debug.Log("Collided with Player");
 		if (other.tag == "Player") {
-			Destroy (gameObject);
+			if(other.GetComponent<PlayerController>().isDead != true )
+				Destroy (gameObject);
 		}
 	}
 	
