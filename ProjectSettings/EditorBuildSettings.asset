@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Chanel's Scene.unity
     guid: 5508df4d55e9247dfb58f5b1171ba4ce
+  - enabled: 1
+    path: Assets/rgbgame.unity
+    guid: 50fd56129e8f84035b0a13df68c18c5d
