@@ -5,55 +5,63 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
 	public int moveSpeed; 
-	public int jumpSpeed;  
+	public int jumpSpeed;
+	public float fallMultiplier = 2.5f;
+	public float lowJumpMultiplier = 2f;
 	public GameObject respawnPoint; 
 	public GameObject deathEffect; 
 
 	public Animator animator; 
 	public bool isDead = false; 
 
-	private bool isGrounded; 
+	Rigidbody2D rb;
+
+	private bool isGrounded;
+
 	// Use this for initialization
-	void Start () {
+	void Awake () {
+		rb = GetComponent<Rigidbody2D> ();
 		animator = GetComponent<Animator> (); 
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.rotation = Quaternion.Euler (0, 0, 0);
+		
+		detectJump ();
 		detectMove (); 
-		detectJump (); 
+ 
+		transform.rotation = Quaternion.Euler (0, 0, 0);
+
+
 		if (!isGrounded) {
 			animator.SetBool ("Moving", false);
-		} else if (GetComponent<Rigidbody2D> ().velocity.x > 1) {
+		} else if (rb.velocity.x > 1) {
 			animator.SetBool ("Moving", true);
 			animator.SetBool ("Facing_Right", true); 
-		} else if (GetComponent<Rigidbody2D> ().velocity.x < -1) {
+		} else if (rb.velocity.x < -1) {
 			animator.SetBool ("Moving", true);
 			animator.SetBool ("Facing_Right", false); 
-		} else{
+		} else {
 			animator.SetBool ("Moving", false);
 		}
 	}
 
 	void detectMove(){
 		if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow)) {
-			GetComponent<Rigidbody2D>().velocity = new Vector2 (-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			rb.velocity = new Vector2 (-moveSpeed, rb.velocity.y);
 		}
 		if (Input.GetKey (KeyCode.D) || Input.GetKey (KeyCode.LeftArrow)) {
-			GetComponent<Rigidbody2D>().velocity  = new Vector2 (moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			rb.velocity  = new Vector2 (moveSpeed, rb.velocity.y);
 		}
 	
 	}
 	void detectJump(){
-		if (Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.Space) || Input.GetKeyDown (KeyCode.UpArrow)) {
-			if (isGrounded) {
-				GetComponent<Rigidbody2D> ().velocity = new Vector2 (GetComponent<Rigidbody2D> ().velocity.x, jumpSpeed);
-				isGrounded = false; 
-			}
+		if(Input.GetButton("Jump")) {
+			rb.velocity = new Vector2 (rb.velocity.x, jumpSpeed);
 		}
-
+		
 	}
+
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.tag == "Enemy") {
